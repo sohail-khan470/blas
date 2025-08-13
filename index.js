@@ -26,6 +26,7 @@ app.get("/get-data", async (req, res) => {
 app.get("/read", async (req, res) => {
   try {
     const pdf = require("pdf-parse");
+    console.log("Test pdf file");
     // Read the PDF file
     const dataBuffer = fs.readFileSync("./files/two.pdf");
 
